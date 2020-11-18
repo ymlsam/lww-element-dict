@@ -1,0 +1,31 @@
+[dict 1] add foo & bar
+foo: abc
+bar: 123
+
+[dict 1] remove foo
+bar: 123
+
+[dict 1] re-add foo
+foo: abc
+bar: 123
+
+[dict 1] rename bar
+foo: abc
+new_bar: 123
+
+[dict 2] initialize another dictionary
+foo: def
+
+[dict 2] merge state from dict 1 (foo from dict 2 is maintained due to its larger timestamp)
+foo: def
+new_bar: 123
+
+[dict 1] remove foo
+new_bar: 123
+
+[dict 2] merge state from dict 1 (removal of foo get merged into dict 2)
+new_bar: 123
+
+[dict 2] reset dictionary
+(empty)
+

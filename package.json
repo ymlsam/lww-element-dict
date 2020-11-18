@@ -8,7 +8,9 @@
 		"clean"  : "rm -rf dist/*",
 		"gulp"   : "gulp -f ./conf/gulpfile.js --cwd ./",
 		"ts"     : "ts-node -P src/tsconfig.json",
+		"ts:demo": "npm run ts -- src/demo.ts",
 		"js"     : "node",
+		"js:demo": "npm run js -- dist/demo.js",
 		"watch"  : "npm run gulp"
 	},
 	"engines"        : {
