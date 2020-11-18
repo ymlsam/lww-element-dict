@@ -1,0 +1,14 @@
+# mac
+.DS_Store
+
+# webstorm
+/.idea/*
+!/.idea/codeStyles
+!/.idea/codeStyleSettings.xml
+
+# node.js
+/node_modules
+/npm-debug.log
+
+# distribution
+/dist
