@@ -64,3 +64,21 @@ npm run watch
 ```
 npm run build
 ```
+
+# Testing
+## Test Cases & Methodology
+Refer to "src/test/main.ts" & "src/test/test-manager.class.ts"
+
+## Running Tests in Typescript
+```
+npm run ts:test
+```
+
+## Running Tests in Javascript
+```
+npm run build
+npm run js:test
+```
+
+## Test Log
+Refer to "log/test.txt"

@@ -1,0 +1,146 @@
+=== basic tests ===
+<test-config>
+replication: state-based
+clock      : SystemClock
+data store : MapStore
+bias       : remove
+processes  : 3
+
+<test-cases>
+[pass] 1. add undefined
+[pass] 2. add null
+[pass] 3. add false
+[pass] 4. add true
+[pass] 5. add zero
+[pass] 6. add non-zero number
+[pass] 7. add empty string
+[pass] 8. add non-empty string
+[pass] 9. add array
+[pass] 10. add object
+[pass] 11. remove element
+[pass] 12. re-add removed element
+[pass] 13. update element key
+
+<summary>
+passed tests: 13 / 13 (100%)
+
+
+=== basic tests ===
+<test-config>
+replication: operation-based
+clock      : SystemClock
+data store : MapStore
+bias       : remove
+processes  : 3
+
+<test-cases>
+[pass] 1. add undefined
+[pass] 2. add null
+[pass] 3. add false
+[pass] 4. add true
+[pass] 5. add zero
+[pass] 6. add non-zero number
+[pass] 7. add empty string
+[pass] 8. add non-empty string
+[pass] 9. add array
+[pass] 10. add object
+[pass] 11. remove element
+[pass] 12. re-add removed element
+[pass] 13. update element key
+
+<summary>
+passed tests: 13 / 13 (100%)
+
+
+=== bias tests ===
+<test-config>
+replication: n/a
+clock      : SystemClock
+data store : MapStore
+bias       : remove
+processes  : 1
+
+<test-cases>
+[pass] 1. add & remove element at the same time
+[pass] 2. remove & add element at the same time
+
+<summary>
+passed tests: 2 / 2 (100%)
+
+
+=== bias tests ===
+<test-config>
+replication: n/a
+clock      : SystemClock
+data store : MapStore
+bias       : add
+processes  : 1
+
+<test-cases>
+[pass] 1. add & remove element at the same time
+[pass] 2. remove & add element at the same time
+
+<summary>
+passed tests: 2 / 2 (100%)
+
+
+=== merge tests ===
+<test-config>
+replication: n/a
+clock      : SystemClock
+data store : MapStore
+bias       : remove
+processes  : 3
+
+<test-cases>
+[pass] 1. check if merge is commutative
+[pass] 2. check if merge is associative
+[pass] 3. check if merge is idempotent
+
+<summary>
+passed tests: 3 / 3 (100%)
+
+
+=== operation tests ===
+<test-config>
+replication: n/a
+clock      : SystemClock
+data store : MapStore
+bias       : remove
+processes  : 3
+
+<test-cases>
+[pass] 1. check if operations are commutative
+[pass] 2. check if operations are idempotent
+
+<summary>
+passed tests: 2 / 2 (100%)
+
+
+=== basic tests ===
+<test-config>
+replication: state-based
+clock      : VectorClock
+data store : MapStore
+bias       : remove
+processes  : 3
+
+<test-cases>
+[pass] 1. add undefined
+[pass] 2. add null
+[pass] 3. add false
+[pass] 4. add true
+[pass] 5. add zero
+[pass] 6. add non-zero number
+[pass] 7. add empty string
+[pass] 8. add non-empty string
+[pass] 9. add array
+[pass] 10. add object
+[pass] 11. remove element
+[pass] 12. re-add removed element
+[pass] 13. update element key
+
+<summary>
+passed tests: 13 / 13 (100%)
+
+

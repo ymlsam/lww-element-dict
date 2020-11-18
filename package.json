@@ -9,8 +9,10 @@
 		"gulp"   : "gulp -f ./conf/gulpfile.js --cwd ./",
 		"ts"     : "ts-node -P src/tsconfig.json",
 		"ts:demo": "npm run ts -- src/demo.ts",
+		"ts:test": "npm run ts -- src/test/main.ts",
 		"js"     : "node",
 		"js:demo": "npm run js -- dist/demo.js",
+		"js:test": "npm run js -- dist/test/main.js",
 		"watch"  : "npm run gulp"
 	},
 	"engines"        : {
